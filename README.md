@@ -2,6 +2,15 @@
 
 This repository contains a demo web application (written in Vue) that can be used with as a starting point for learning SWA (Static Web App) 
 
+## Learning Points
+* Static Web Apps
+* API support with Azure Functions
+
+## Terminal Pills
+    swa start .\dist\ --api ..\api\ --run "npm run build"     // build and run SWA
+
+
+
 ## Resources
 
 * [Azure Static Web Apps documentation](https://docs.microsoft.com/en-us/azure/static-web-apps/) - Microsoft Docs
@@ -14,6 +23,6 @@ This repository contains a demo web application (written in Vue) that can be use
 
 * [10 Things To Know About Azure Static Web Apps](https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i)
 * [Awesome Azure Static Web Apps](https://github.com/staticwebdev/awesome-azure-static-web-apps) - GitHub [@staticwebdev](https://github.com/staticwebdev)
-
+* [Azure Static Web Apps CLI](https://github.com/Azure/static-web-apps-cli)
 
 
