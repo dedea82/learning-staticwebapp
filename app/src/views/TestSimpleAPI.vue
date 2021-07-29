@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>Test simple API (no auth)</h3>
-    <div>{{ message }}</div>
+    <div v-for="msg in messages" :key="msg">{{ msg }}</div>
   </div>
 </template>
 
@@ -10,12 +10,25 @@ export default {
   name: "TestSimpleAPI",
   data() {
     return {
-      message: "",
+      messages: [],
     };
   },
   async mounted() {
-    const { text } = await (await fetch("/api/messages")).json();
-    this.message = text;
+    this.messages = [
+      (await (await fetch("/api/messages")).json()).text,
+      (await (await fetch("/api/messages/Hi?name=John")).json()).text,
+      (
+        await (
+          await fetch("/api/messages/Posted", {
+            method: "POST",
+            body: JSON.stringify({ name: "Bob" }),
+          })
+        ).json()
+      ).text,
+    ];
+
+    // const { text } = await (await fetch("/api/messages")).json();
+    // this.message = text;
   },
 };
 </script>
