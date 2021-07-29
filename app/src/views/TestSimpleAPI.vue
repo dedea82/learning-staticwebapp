@@ -26,9 +26,6 @@ export default {
         ).json()
       ).text,
     ];
-
-    // const { text } = await (await fetch("/api/messages")).json();
-    // this.message = text;
   },
 };
 </script>
