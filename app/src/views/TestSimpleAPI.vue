@@ -14,7 +14,7 @@ export default {
     };
   },
   async mounted() {
-    const { text } = await (await fetch("/api/messages/javascript")).json();
+    const { text } = await (await fetch("/api/messages")).json();
     this.message = text;
   },
 };

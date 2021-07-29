@@ -8,7 +8,8 @@ This repository contains a demo web application (written in Vue) that can be use
 
 ## Terminal Pills
     swa start .\dist\ --api ..\api\ --run "npm run build"     // build and run SWA
-
+    func init --dotnet|--javascript|--python    // initialize \api folder
+    func new --template "Http Trigger" --name api-name  // create new function
 
 
 ## Resources
