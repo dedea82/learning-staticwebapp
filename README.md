@@ -5,6 +5,9 @@ This repository contains a demo web application (written in Vue) that can be use
 ## Learning Points
 * Static Web Apps
 * API support with Azure Functions
+* GitHub Actions workflows for Azure Static Web Apps
+* Enable monitoring
+* 
 
 ## Terminal Pills
     swa start .\dist\ --api ..\api\ --run "npm run build"     // build and run SWA
@@ -25,5 +28,6 @@ This repository contains a demo web application (written in Vue) that can be use
 * [10 Things To Know About Azure Static Web Apps](https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i)
 * [Awesome Azure Static Web Apps](https://github.com/staticwebdev/awesome-azure-static-web-apps) - GitHub [@staticwebdev](https://github.com/staticwebdev)
 * [Azure Static Web Apps CLI](https://github.com/Azure/static-web-apps-cli)
+* [Application Insights for web pages](https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript)
 
 
