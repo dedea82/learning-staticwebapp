@@ -17,5 +17,4 @@ module.exports = async function (context, req) {
     context.res.json({
         text: (name ? name + " says: " : "") + (say ? say : "Hello") + " from the Javascript API"
     });
-    context.done();
 };

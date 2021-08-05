@@ -7,7 +7,6 @@ This repository contains a demo web application (written in Vue) that can be use
 * API support with Azure Functions
 * GitHub Actions workflows for Azure Static Web Apps
 * Enable monitoring
-* 
 
 ## Terminal Pills
     swa start .\dist\ --api ..\api\ --run "npm run build"     // build and run SWA
