@@ -4,7 +4,9 @@
     <div><button v-on:click="monitor('wait')">Call long API method</button></div>
     <div><button v-on:click="monitor('loglevels')">API log levels</button></div>
     <div><button v-on:click="monitor('ai')">Application Insights (function side)</button></div>
-    <div><button v-on:click="fatal()">Unhandled js-exception</button> </div>
+    <div><button v-on:click="fatal()">Unhandled js-exception (Vue)</button> </div>
+    <div><button onclick="call_fake_method('pippo')">Unhandled js-exception (javascript)</button> </div>
+    <div><button onclick="console.log( [3, 5, 7, 15].find(e => e === 7) );">Exception only in IE 10</button> </div>
     <div><br />{{ message }}</div>
   </div>
 </template>
