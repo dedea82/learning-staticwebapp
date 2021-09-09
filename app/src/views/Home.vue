@@ -11,6 +11,9 @@
       <li>
         <router-link to="/monitoring">Enable monitoring - Test monitoring and Application Insights</router-link>
       </li>
+      <li>
+        <router-link to="/auth">Authentication and authorization (login required)</router-link>
+      </li>
     </ul>
   </div>
 </template>

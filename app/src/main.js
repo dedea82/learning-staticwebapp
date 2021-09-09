@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import App from '@/App.vue'
-import router from '@/vue.router.js'
+import { router } from '@/vue.router.js'
 import appInsights from '@/vue.appinsights.js'
 
 appInsights.loadAppInsights();
-
 Vue.config.errorHandler = function (err) {
   appInsights.trackException({ exception: err });
   console.error(err);
