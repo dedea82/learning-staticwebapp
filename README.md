@@ -8,9 +8,11 @@ This repository contains a demo web application (written in Vue) that can be use
 * GitHub Actions workflows for Azure Static Web Apps
 * Enable monitoring
 * Authentication and authorization for Azure Static Web Apps
+* Application settings for Azure Static Web Apps
 
 ## Terminal Pills
-    swa start .\dist\ --api ..\api\ --run "npm run build"     // build and run SWA
+    swa start .\dist\ --api-location ..\api\ --run "npm run build"     // build and run SWA
+    swa start http://localhost:8080 --api-location ..\api    // run SWA on development server
     func init --dotnet|--javascript|--python    // initialize \api folder
     func new --template "Http Trigger" --name api-name  // create new function
 
@@ -29,5 +31,6 @@ This repository contains a demo web application (written in Vue) that can be use
 * [Awesome Azure Static Web Apps](https://github.com/staticwebdev/awesome-azure-static-web-apps) - GitHub [@staticwebdev](https://github.com/staticwebdev)
 * [Azure Static Web Apps CLI](https://github.com/Azure/static-web-apps-cli)
 * [Application Insights for web pages](https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript)
+* [Configure application settings for Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/application-settings)
 
 

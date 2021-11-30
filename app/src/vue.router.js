@@ -8,6 +8,7 @@ const Home = () => import( /* webpackChunkName: "home" */ '@/views/Home.vue');
 const TestSimpleAPI = () => import( /* webpackChunkName: "simple-api" */ '@/views/TestSimpleAPI.vue');
 const TestMonitoring = () => import( /* webpackChunkName: "monitoring" */ '@/views/TestMonitoring.vue');
 const TestAuthentication = () => import( /* webpackChunkName: "auth" */ '@/views/TestAuthentication.vue');
+const TestAppSettings = () => import( /* webpackChunkName: "app-settings" */ '@/views/TestAppSettings.vue');
 
 export const router = new VueRouter({
     mode: "hash",
@@ -15,6 +16,7 @@ export const router = new VueRouter({
         { path: '/home', component: Home },
         { path: '/simple-api', component: TestSimpleAPI },
         { path: '/monitoring', component: TestMonitoring },
+        { path: '/app-settings', component: TestAppSettings },
         { path: '/auth', component: TestAuthentication, meta: { requiresAuth: true } },
 
         { path: '/login', beforeEnter() { window.location.replace('/login'); } },

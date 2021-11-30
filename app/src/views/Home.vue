@@ -14,6 +14,9 @@
       <li>
         <router-link to="/auth">Authentication and authorization (login required)</router-link>
       </li>
+      <li>
+        <router-link to="/app-settings">App Settings & Environment variables</router-link>
+      </li>
     </ul>
   </div>
 </template>
