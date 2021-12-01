@@ -33,9 +33,9 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env: # Add environment variables here
           # Inject vars at build time
-          myvarname: 'myvarvalue (inside env in yml)' 
+          VUE_APP_myvarname: 'myvarvalue (inside env in yml)' 
           # Inject secrets at build time from GitHub Secrets
-          VERY_SECRET_GITHUB_VALUE: ${{ secrets.VERY_SECRET_GITHUB_VALUE }}
+          VUE_APP_VERY_SECRET_GITHUB_VALUE: ${{ secrets.VERY_SECRET_GITHUB_VALUE }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

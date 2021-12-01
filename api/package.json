@@ -1,8 +1,5 @@
 {
   "dependencies": {
     "applicationinsights": "^2.1.4"
-  },
-  "engines": {
-    "node": ">= 16.8.0"
   }
 }

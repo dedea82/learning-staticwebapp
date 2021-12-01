@@ -29,12 +29,12 @@ export default {
       value: process.env.MYPROPERTY,
     });
     result.push({
-      key: "process.env.VERY_SECRET_GITHUB_VALUE (from GitHub actions)",
-      value: process.env.VERY_SECRET_GITHUB_VALUE,
+      key: "process.env.VUE_APP_VERY_SECRET_GITHUB_VALUE (from GitHub actions)",
+      value: process.env.VUE_APP_VERY_SECRET_GITHUB_VALUE,
     });
     result.push({
-      key: "process.env.myvarname (from GitHub actions)",
-      value: process.env.myvarname,
+      key: "process.env.VUE_APP_myvarname (from GitHub actions)",
+      value: process.env.VUE_APP_myvarname,
     });
     result.push({
       key: "process.env.API_MYPROPERTY (from API)",
