@@ -35,15 +35,17 @@ export default {
       this.message = "trying to reading undefined: " + not_real_undefined.text; // unhandled exception;
     },
     track() {
-      appInsights.trackEvent({ name: "LocalTracking" });
-      appInsights.trackEvent({
-        name: "LocalTrackingWithProperty",
-        properties: { myValue: "BOH" },
-      });
-      appInsights.trackMetric({
-        name: "LocalMetric",
-        average: Math.random() * 10,
-      });
+      if (appInsights) {
+        appInsights.trackEvent({ name: "LocalTracking" });
+        appInsights.trackEvent({
+          name: "LocalTrackingWithProperty",
+          properties: { myValue: "BOH" },
+        });
+        appInsights.trackMetric({
+          name: "LocalMetric",
+          average: Math.random() * 10,
+        });
+      } else console.log("appInsights not initialized!");
     },
   },
 };

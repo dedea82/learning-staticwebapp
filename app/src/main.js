@@ -3,10 +3,12 @@ import App from '@/App.vue'
 import { router } from '@/vue.router.js'
 import appInsights from '@/vue.appinsights.js'
 
-appInsights.loadAppInsights();
-Vue.config.errorHandler = function (err) {
-  appInsights.trackException({ exception: err });
-  console.error(err);
+if (appInsights) {
+  appInsights.loadAppInsights();
+  Vue.config.errorHandler = function (err) {
+    appInsights.trackException({ exception: err });
+    console.error(err);
+  }
 }
 
 new Vue({
